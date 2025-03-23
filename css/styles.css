@@ -1,0 +1,16 @@
+/* Custom styles for the Crypto Price Tracker */
+.table-container {
+    overflow-x: auto;
+    max-width: 100%; /* Ensure it fits within the page */
+}
+
+table {
+    width: 100%; /* Make the table take full width */
+    table-layout: fixed; /* Prevent overflow */
+}
+
+td, th {
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    white-space: nowrap; /* Prevent text wrapping */
+}

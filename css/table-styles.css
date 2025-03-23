@@ -1,0 +1,27 @@
+/* Table layout fixes */
+.table-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Column widths */
+th:nth-child(1), td:nth-child(1) { width: 20%; } /* Coin */
+th:nth-child(2), td:nth-child(2) { width: 12%; } /* Price */
+th:nth-child(3), td:nth-child(3) { width: 15%; } /* 24h Chart */
+th:nth-child(4), td:nth-child(4) { width: 12%; } /* 24h Change */
+th:nth-child(5), td:nth-child(5) { width: 15%; } /* Market Cap */
+th:nth-child(6), td:nth-child(6) { width: 18%; } /* Volume */
+th:nth-child(7), td:nth-child(7) { width: 8%; }  /* Actions */
+
+/* Cell content */
+td, th {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
